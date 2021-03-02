@@ -24,7 +24,7 @@ export interface XmlDtdResult {
     systemId: string;
 }
 
-declare class Libxml {
+export class Libxml {
     /**
      * Loads an XML from a given URL which is generally a filepath
      * @param url The file to load from
@@ -168,5 +168,3 @@ declare class Libxml {
     validationDtdErrors?: Record<string/*SystemId*/, XmlError[]>;
     validationSchemaErrors?: Record<string/*SchemaName*/, XmlError[]>;
 }
-
-export = Libxml;
